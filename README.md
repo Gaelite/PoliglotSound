@@ -19,7 +19,7 @@ Available languages include:
 - Bengali
 - Russian
 - Japanese
-- 
+  
 **Note:** This project is my first school project. I am excited to share it and welcome any feedback or suggestions for improvement!
 
 ## ✨ Features
