@@ -75,10 +75,21 @@ Ensure you have Python 3.x installed on your system.
 
 ## 🚀 Usage
 
-1. Select the desired language by pressing the "Selected Language" button.
+1. Select the desired language by pressing the "Selected Language" button and speaking the name of the language you want to translate into.
+   
+   ![Select Language](assets/images/lang.png)
+
 2. Press the microphone icon and speak to capture the text you want to translate.
+   
+   ![Microphone Icon](assets/images/mic.png)
+
 3. The translation will appear in the text area.
+   
+   ![Translation Area](assets/images/fullview.png)
+
 4. You can transcribe all translations to a document by pressing the corresponding button in the footer.
+   
+   ![Transcription Button](assets/images/transcript.png)
 
 ## 📜 Dependencies
 
