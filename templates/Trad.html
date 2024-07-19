@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traductor de audio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <img src="{{ url_for('static', filename='img/UAG.jpg') }}" alt="UAG" title="Logo" class="UAG">
+        </div>
+        <div class="headtext">
+            <h1>PoliglotSound</h1>
+            <h2>Traductor</h2>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="content">
+            <div class="objetivos">
+                <p class="textoprov">Lenguajes Disponibles</p>
+                <ul class="descr">
+                    <li>Chino mandarín</li>
+                    <li>Español</li>
+                    <li>Inglés</li>
+                    <li>Hindi</li>
+                    <li>Árabe</li>
+                    <li>Portugués</li>
+                    <li>Bengalí</li>
+                    <li>Ruso</li>
+                    <li>Japonés</li>
+                </ul>
+            </div>
+
+            <div class="transcrito">
+                <div class="centro">
+                    <form action="/boton1" method="post">
+                        <input type="image" src="{{ url_for('static', filename='img/mic.jpg') }}" alt="Microfono" title="Traducir" class="ImgMic">
+                    </form>
+                    <form action="/CambiarTraduccion" method="post" class="selector">
+                        <input type="submit" title="Cambiar idioma" name="idioma" class="idiomas" value="Idioma elegido:{{idioma}}">
+                    </form>
+                </div>
+                <textarea id="name" class="cuadro" readonly>
+                    {% for elemento in texto_capturado %}
+                        {{ elemento }}
+                    {% endfor %}
+                </textarea>
+            </div>
+
+            <div class="general">
+                <p class="textoprov">Ayuda</p>
+                <ul class="ayuda">
+                    <li>Presione el botón de “Idioma elegido” y diga en voz alta una de las opciones de “Lenguajes Disponibles”</li>
+                    <li>De click en el micrófono cuando esté listo y diga la frase a traducir</li>
+                    <li>(Opcional) presione de nuevo el botón “Idioma elegido” para probar con otros idiomas</li>
+                    <li>Presione el botón en la parte inferior de la pantalla para transcribir todas las traducciones</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Gael García - Lenguajes utilizados: Python, HTML, CSS</p>
+        <form action="/transcripcion" method="post">
+            <input type="submit" value="Presiona aqui para transcribir" class="transcripcion">
+        </form>
+    </footer>
+</body>
+</html>

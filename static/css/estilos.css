@@ -1,0 +1,242 @@
+/* General Body Styling */
+body {
+    background: hsla(0, 1%, 16%, 0.9);
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.UAG {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    filter: invert(100%);
+}
+
+.headtext {
+    color: #fff;
+}
+
+.heading {
+    flex-shrink: 0;
+}
+
+.headtext h1 {
+    font-size: 20px;
+}
+
+.headtext h2 {
+    font-size: 14px;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo para centrado */
+    gap: 20px;
+}
+
+.objetivos, .general {
+    background: rgb(91, 88, 88);
+    width: 250px;
+    height: 90%;
+    border-radius: 25px;
+    line-height: 2.0;
+    padding: 20px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px; /* Espacio alrededor del contenedor principal */
+}
+
+.objetivos, .general {
+    background: rgb(91, 88, 88);
+    width: 250px;
+    height: 72%;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative; /* Permite el uso de posicionamiento absoluto para el texto */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+.textoprov {
+    font-size: 25px;
+    position: absolute; /* Permite el centrado del texto en el medio del contenedor */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el texto */
+    z-index: 1; /* Asegura que el texto esté por encima del contenido de la lista */
+    color: #000000; /* Color del texto */
+    transition: opacity 0.2s; /* Transición suave para el cambio de opacidad */
+}
+
+.objetivos:hover .textoprov, .general:hover .textoprov {
+    opacity: 0; /* Desaparece el texto al hacer hover */
+}
+
+.descr, .ayuda {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: transparent; /* Inicialmente transparente */
+    transition: color 0.2s; /* Transición suave para el color */
+    text-align: center;
+}
+
+.objetivos:hover .descr, .general:hover .ayuda {
+    color: #fff; /* Color de los elementos de la lista al hacer hover */
+}
+
+.objetivos ul, .general ul {
+    padding: 0; /* Asegura que no haya padding adicional en la lista */
+    margin: 0;
+}
+
+
+.descr, .ayuda {
+    font-size: 14px;
+    color: transparent;
+    transition: 0.5s;
+}
+
+.objetivos:hover, .general:hover {
+    transform: scale(1.1);
+}
+
+.objetivos:hover .descr, .general:hover .ayuda {
+    color: #000;
+}
+
+.transcrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+    max-width: 500px; /* Limita el ancho del cuadro de transcripción */
+    text-align: center;
+    font-size: 24px;
+}
+
+.cuadro {
+    background-color: rgb(112, 110, 110, 0.5);
+    border-radius: 50px;
+    width: 100%;
+    height: 400px;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+/* Centro Styling */
+.centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 5px;
+}
+
+.ImgMic {
+    box-shadow: 5px 5px 5px 5px hsl(0, 3%, 56%, 0.5);
+    width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 100px;
+    padding: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.ImgMic:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    filter: invert(100%);
+}
+
+.ImgMic:active {
+    transition: 1s;
+    transform: scale(1.0);
+}
+
+.selector {
+    text-align: center;
+    background-color: hsl(0, 1%, 30%);
+    padding: 10px;
+    border-radius: 50px;
+    max-width: 90%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.idiomas {
+    background-color: hsl(0, 0%, 48%);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.idiomas:hover {
+    background-color: hsl(0, 1%, 21%);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    font-family: "Times New Roman", Times, serif;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.transcripcion {
+    border-radius: 15px;
+    background: rgb(91, 88, 88);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.transcripcion:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
