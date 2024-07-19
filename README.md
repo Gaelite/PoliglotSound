@@ -23,7 +23,6 @@ Ensure you have Python 3.x installed on your system.
    git clone https://github.com/your_username/your_repository.git
    cd your_repository
 2. **Create a virtual environment:**
-
   On Windows:
     -python -m venv Restore
   On macOS/Linux:
