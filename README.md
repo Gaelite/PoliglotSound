@@ -2,6 +2,9 @@
 
 PoliglotSound is a web application that enables users to translate spoken text into multiple languages using voice recognition and automatic translation. Built with Flask for the web server, this application leverages Python libraries for audio processing and translation.
 
+[Watch project video](https://youtu.be/d2u3e-elCVU)
+
+
 ## 📋 Description
 
 This application allows users to:
